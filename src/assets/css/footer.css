@@ -16,8 +16,9 @@ footer *{
 .fa-envelope{
 	color: #7BB748;
 	position: absolute;
-	top: 195px;
-	left: 30px;
+	top: 10px;
+	left: 10px;
+	z-index: 1;
 }
 
 input[type="email"]{
@@ -29,12 +30,14 @@ input[type="email"]{
 	outline: none;
 }
 
-button{
-	background-color: #7BB748;
-	border: none;
-	margin: 0;
-	font-weight: 600;
+.input-group>.form-control:not(:first-child){
+	background-color: #252627;
 	color: white;
+}
+
+.input-group>.input-group-append>.btn{
+	color: white;
+	background-color: #7BB748;
 }
 
 footer ul li{
