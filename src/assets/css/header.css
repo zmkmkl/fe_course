@@ -76,7 +76,7 @@ a.nav-link{
 }
 
 @media (min-width: 992px) and (max-width: 1200px){
-	.row .align-items-center{
+	.row .callNow{
 		display: none;
 	}
 	header .row .callNow{

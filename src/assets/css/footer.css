@@ -16,10 +16,12 @@ footer *{
 .fa-envelope{
 	color: #7BB748;
 	position: absolute;
-	top: 10px;
-	left: 10px;
+	top: 17px;
+	left: 17px;
 	z-index: 1;
 }
+
+
 
 input[type="email"]{
 	/*font-family: FontAwesome;*/
@@ -89,4 +91,10 @@ footer a:hover{
 	color: #7BB748;
 	text-decoration: none;
 	border-bottom: 1px solid #7BB748;
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+	footer{
+		text-align: center;
+	}
 }
