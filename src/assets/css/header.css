@@ -1,0 +1,85 @@
+header *{
+	transition: 0.1s;
+}
+
+header{
+	font-family: 'Poppins', sans-serif;
+	align-items: center;
+}
+
+header a{
+	text-decoration: none;
+	color: black;
+}
+
+header a:hover{
+	color: #D86147;
+	text-decoration: none;
+}
+
+header span{
+	color: #7A878D;
+	text-transform: uppercase;
+	font-size: 0.8em;
+}
+
+header h5{
+	font-size: 1.2em;
+	font-weight: 600;
+	margin: 0;
+}
+
+header .row{
+	min-height: 90px;
+}
+
+header .row .callNow{
+	border-top: 2px solid #7BB648;
+}
+
+a.nav-link{
+	margin-left: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	align-items: baseline;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-light .navbar-nav .nav-link{
+	color: black;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+	color: #D86147;
+}
+
+.navbar-light .navbar-nav .active>.nav-link{
+	color: #D86147;
+	border-bottom: 2px solid #D86147;
+}
+
+.phoneIco{
+	padding-right: 0px;
+
+}
+
+
+
+@media (max-width: 992px){
+	a.nav-link{
+		margin-left: inherit;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+	.row .align-items-center{
+		display: none;
+	}
+	header .row .callNow{
+	border-top: none;
+}
+}
