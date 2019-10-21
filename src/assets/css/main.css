@@ -48,10 +48,26 @@ section{
 	max-height: 15px;
 	border-radius: 3px;
 	margin-left: 10px;
+	
 }
 
 .socialContent{
 	margin-bottom: 100px;
+}
+
+.red{
+	color: red;
+}
+
+.statInfo{
+	font-weight: 500;
+}
+
+
+
+.brake{
+	margin: 0 10px;
+	color: #B6BBC0;
 }
 
 .textContent h3{
