@@ -48,7 +48,7 @@ section{
 	max-height: 15px;
 	border-radius: 3px;
 	margin-left: 10px;
-	
+
 }
 
 .socialContent{
@@ -63,7 +63,25 @@ section{
 	font-weight: 500;
 }
 
+.page-link{
+	color: black;
+	font-weight: 500;
+	padding: 10px 15px;
+}
 
+.page-link:hover{
+	background-color: rgba(233,86,61,0.7);
+	color: white;
+}
+
+.activePage{
+	background-color: #e9563d;
+	color: white;
+}
+
+.pagination{
+	margin-bottom: 100px;
+}
 
 .brake{
 	margin: 0 10px;
