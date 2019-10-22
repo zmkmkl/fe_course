@@ -1,18 +1,7 @@
 @import url(header.css);
 @import url(footer.css);
 
-section, main{
-	font-family: 'Poppins', sans-serif;
-}
 
-section{
-	min-height: 250px;
-	background-color: grey;
-	color: white;
-	font-weight: 600;
-	display: flex;
-	align-items: center;
-}
 
 .postImage span{
 	color: #B6BBC0;

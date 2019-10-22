@@ -1,1 +1,76 @@
 /* CSS for Contacts page should lives there */
+@import url(header.css);
+@import url(footer.css);
+
+.content{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.content *{
+	transition: 0.1s;
+}
+
+.content h2{
+	margin-bottom: 25px;
+}
+
+.content input, .content textarea, .content select{
+	outline: none;
+	resize: none;
+	overflow: scroll;
+	width: 100%;
+	margin-bottom: 20px;
+	background-color: white;
+	border-radius: 2px;
+	border: 1px solid #DFE6EB;
+	color: grey;
+	box-shadow: none;
+	height: 54px;
+	padding-left: 40px;
+}
+
+select.formSelector{
+	-webkit-appearance: none;
+  -webkit-border-radius: 2px;
+}
+
+.content textarea{
+	height: 214px;
+	padding: 16px 10px 16px 40px;
+
+}
+.content input:focus, .content textarea:focus, .content select:focus{
+	box-shadow: 0 0 2px 2px grey;
+}
+
+.btn-success{
+	border-radius: 2px;
+	background-color: #67b930;
+	border: none;
+	padding: 13px 28px;
+	text-transform: uppercase;
+	font-size: 0.7em;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-top: 10px;
+}
+
+.content .container i{
+	position: absolute;
+	z-index: 1;
+	left: 30px;
+	padding-top: 19px;
+}
+
+.container iframe{
+	height: 510px;
+	width: 100%;
+}
+
+/*@media (min-width: 768px){
+	.content {
+		width: 100%;
+		margin-bottom: 50px;
+	}
+}*/

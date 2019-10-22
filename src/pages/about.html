@@ -8,19 +8,20 @@
       rel="stylesheet"
       href="../../node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+    
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap" rel="stylesheet">
 
     <script src="../../node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/5b2252f7f0.js" crossorigin="anonymous"></script>
-  <title>Blog</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+  <title>About Us</title>
   </head>
   <body>
     <header>
       <div class="container">
         <div class="row d-flex justify-content-between align-items-center">
-          <div class="col-auto"><img src="../assets/img/logo.png"></div>
+          <div class="col-auto"><a href="blog.html"><img src="../assets/img/logo.png"></a></div>
           <div class="col-auto">
             <nav class="navbar navbar-expand-lg navbar-light justify-content-center">
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,12 +65,14 @@
     </header>
     <!-- Header should be there -->
     <section>
-      <div class="container">
-        <div class="row">
-          sdf
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col d-flex align-items-center">
+              <h1>About Us</h1>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
     <main>
       <div class="container">
         <div class="row"></div>
@@ -79,7 +82,7 @@
     <footer>
       <div class="container">
         <div class="row footerInfo justify-content-between text-center text-md-left">
-          <div class="col-lg-3  col-md-6">
+          <div class="col-lg-3  col-md-auto">
             <h3>Contact Information</h3>
             <div class="text d-flex justify-content-around">
               <div class="locationImg"><i class="fas fa-map-marker-alt"></i></div>
@@ -90,18 +93,18 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-auto col-md-6">
+          <div class="col-lg-auto col-md-auto">
             <h3>Navigation</h3>
             <ul>
-              <li><a href="blog_post.html">Home</a></li>
+              <li><a href="blog.html">Home</a></li>
               <li><a href="about.html">About Us</a></li>
               <li><a href="career.html">Career</a></li>
-              <li><a href="blog_post.html">Blog Post</a></li>
+              <li><a href="blog.html">Blog Post</a></li>
               <li><a href="faq.html">FAQ</a></li>
               <li><a href="contacts.html">Contact</a></li>
             </ul>
           </div>
-          <div class="col-lg-auto col-md-6">
+          <div class="col-lg-auto col-md-auto">
             <h3>Services</h3>
             <ul>
               <li><a href="#">Customer Support</a></li>
@@ -113,22 +116,25 @@
               <li><a href="#">International</a></li>
             </ul>
           </div>
-          <div class="col-lg-auto col-md-6">
+           <!-- <i class="far fa-envelope"></i> -->
+          <div class="col-lg-auto col-md-auto">
             <div class="subscribe">
               <h3>Newsletter</h3>
               <label>Enter your email & subcribing newsletter</label>
               <div class="formField">
-                <form action="#">
+                <div class="input-group mb-3">
                   <i class="far fa-envelope"></i>
-                  <input type="email" name="email" placeholder="          Email address">
-                  <button>Subscribe</button>
-                </form>
+                  <input type="email" class="form-control" placeholder="      Email address" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button">Subscribe</button>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="social">
-              <a href="https://www.facebook.com/"><img src="../assets/img/fb.png"></a>
-              <a href="https://twitter.com/?lang=ru"><img src="../assets/img/twitter.png"></a>
-              <a href="https://aboutme.google.com/u/0/?referer=gplus"><img src="../assets/img/google.png"></a>
+              <a href="https://www.facebook.com/"><img src="../assets/img/fb.png" alt="fb_img"></a>
+              <a href="https://twitter.com/?lang=ru"><img src="../assets/img/twitter.png" alt="twitter_img"></a>
+              <a href="https://aboutme.google.com/u/0/?referer=gplus"><img src="../assets/img/google.png" alt="google_img"></a>
             </div>
           </div>
         </div>
