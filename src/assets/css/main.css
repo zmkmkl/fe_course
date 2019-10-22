@@ -1,7 +1,9 @@
 @import url(header.css);
 @import url(footer.css);
 
-
+*{
+	transition: 0.2s;
+}
 
 .postImage span{
 	color: #B6BBC0;

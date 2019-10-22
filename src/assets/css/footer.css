@@ -6,7 +6,7 @@ footer{
 }
 
 footer *{
-	transition: 0.1s;
+	transition: 0.2s;
 }
 
 footer .fa-map-marker-alt{
@@ -90,6 +90,19 @@ footer .social img{
 	border-radius: 20px;
 }
 
+footer .social a:hover{
+	text-decoration: none;
+	border-bottom: none;
+}
+
+footer .social img:active{
+	border-top: 2px solid #7BB748;
+	border-left: 2px solid #7BB748;
+}
+
+footer .social img:hover{
+	border-radius: 3px;
+}
 
 
 footer hr{
