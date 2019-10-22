@@ -170,3 +170,16 @@
 	background-color: #91D6F1;
 }
 
+@media (max-width: 768px){
+	.sidebar{
+		padding-left: 0;
+	}
+
+	.news{
+		text-align: center;
+	}
+
+	.news h3{
+		text-align: left;
+	}
+}

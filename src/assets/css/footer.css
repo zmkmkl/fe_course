@@ -78,7 +78,7 @@ footer p, footer li, footer a, footer label{
 
 
 
-.btn-outline-secondary{
+footer .btn-outline-secondary{
 	border: none;
 	outline: none;
 	height: 50px;
