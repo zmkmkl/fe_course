@@ -1,0 +1,90 @@
+@mixin plan {
+    h4{
+        font-weight: 400;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+    }
+
+    p{
+        font-size: 4em;
+        font-weight: 500;
+        display: inline;
+        
+        &::before{
+            content: "$";
+            font-size: 0.6em;
+        }
+        
+    }
+
+    span{
+        color: #8492af;
+    }
+    
+    ul{
+        padding: 0;
+        margin-top: 30px;
+        li{
+            list-style-type: none;
+            list-style-image: url('../img/done.gif');
+            color: #8492af;
+            line-height: 2.5;
+            word-spacing: 3px;
+        }
+    }
+
+    img{
+        margin-right: 10px;
+    }
+
+    box-shadow: 0px 0px 50px 1px #cacbcf;
+    padding: 40px 50px 30px 50px;
+    margin: 50px auto;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    h1{
+        font-weight: 200;
+        margin: 150px auto 30px;
+    }
+}
+
+main{
+    .btn-primary{
+        border-radius: 25px;
+        height: 50px;
+        font-weight: bold;
+        padding-left: 60px;
+        padding-right: 60px;
+        margin: 20px auto;
+    }
+    p{
+        color: #8492af;
+        margin: 50px auto;
+    }
+    .line{
+        height: 1px;
+        width: 20%;
+        background-color: #8492af;
+        // display: flex;
+        align-self: center;
+        opacity: 0.6;
+    }
+
+}
+
+.planBox{
+    @include plan;
+}
+
+@media (max-width: 768px){
+    main{
+        .btn-primary{
+            width: 100%;
+        }
+    }
+}
