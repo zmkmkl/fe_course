@@ -1,0 +1,128 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+$text-size: 14px;
+$green-color: #7cd9a4;
+$p-color: #8a939c;
+$h1-color: #5c6670;
+$white-color: #fff;
+
+@mixin circleBox {
+    height: 180px;
+    width: 180px;
+    border-radius: 90px;
+    background-color: #eeeff0;
+    margin: auto;
+    align-items: center;
+    margin-bottom: 80px;
+    transition: .2s;
+    &:hover{
+        background-color: $green-color;
+        
+        cursor: pointer;
+        i{
+            color: $white-color;
+        }
+    }
+}
+
+@mixin btnLearn {
+    background-color: $green-color;
+    border-radius: 20px;
+    height: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    outline: none;
+    color: $white-color;
+    font-size: $text-size;
+    transition: .2s;
+    &:hover{
+        background-color: #4ed789;
+        color: $white-color;
+    }
+    &:active{
+        background-color: #3fae6f;
+        outline: none;
+    }
+}
+
+body{
+    background-image: url(../img/bg.png);
+    background-position: bottom right;
+    background-size: cover;
+	background-attachment: fixed;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+
+header{
+    margin-bottom: 150px;
+    h1{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 200;
+        color: $h1-color;
+    }
+    hr{
+        width: 30px;
+        height: 1px;
+        background-color: $green-color;
+        margin: 30px auto;
+    }
+    p{
+        color: $p-color;
+        font-size: $text-size;
+    }
+}
+
+section{
+    margin-bottom: 100px;
+    i{
+        color: $h1-color;
+        font-size: 3em; 
+    }
+    .circle{
+        @include circleBox;
+    }
+    h4{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        margin-bottom: 40px;
+    }
+    p{
+        font-family: 'Montserrat', sans-serif;
+        color: $p-color;
+        font-size: $text-size;
+        line-height: 1.8;
+    }
+    .col-lg-3{
+        padding: 0 15px;
+        margin-bottom: 100px;
+    }
+    
+    
+}
+
+.btn{
+    @include btnLearn;
+}
+main{
+    h1{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 200;
+        color: $h1-color;
+        margin-bottom: 60px;
+    }
+    p{
+        font-family: 'Montserrat', sans-serif;
+        color: $p-color;
+        font-size: $text-size;
+        line-height: 2.4;
+        margin-bottom: 70px;
+    }
+}
