@@ -36,10 +36,15 @@
     img{
         margin-right: 10px;
     }
+    &:hover{
+        
+        transform: scale(1.1);
+        cursor: pointer;
+    }
 
     box-shadow: 0px 0px 50px 1px #cacbcf;
     padding: 40px 50px 30px 50px;
-    margin: 50px auto;
+    margin: 50px 50px;
     transition: .2s;
 }
 
@@ -53,6 +58,8 @@ header{
         margin: 150px auto 30px;
     }
 }
+
+
 
 main{
     .btn-primary{
@@ -81,11 +88,6 @@ main{
 .planBox{
     @include plan;
 
-    &:hover{
-        
-        transform: scale(1.1);
-        cursor: pointer;
-    }
 }
 
 @media (max-width: 768px){
@@ -95,3 +97,20 @@ main{
         }
     }
 }
+
+@media(min-width: 1500px){
+    section{
+        padding: 0 50px;
+    }
+
+    .planBox{
+        margin: 50px auto;
+    }
+}
+
+@media(min-width: 1500px){
+    section{
+        padding: 0 100px;
+    }
+}
+
