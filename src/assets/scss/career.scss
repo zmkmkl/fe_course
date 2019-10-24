@@ -1,0 +1,178 @@
+@import '../../src/assets/css/header.css';
+@import '../../src/assets/css/footer.css';
+@import '../../node_modules/@fortawesome/fontawesome-free/css/all.css';
+
+$p-color: #5c666a;
+$preferences-bg: #ecf1f7;
+$sector-padding: 100px 0;
+$p-size: .9em;
+*{
+    transition: .1s;
+}
+@mixin BTN {
+    height: 50px;
+    font-weight: 600;
+    padding: 0 24px;
+    text-align: center;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+@mixin applyBTN {
+    @include BTN;
+    color: white;
+    background-color: #67b930;
+    margin-right: 10px;
+    &:hover{
+        background-color: #5aa22a;
+    }
+    &:active{
+        background-color: #4c8923;
+    }
+}
+
+@mixin moreBTN {
+    @include BTN;
+    color: #9fa6a9;
+    border: 1px solid #9fa6a9;
+    &:hover{
+        border-color: #67b930;
+        color: #67b930;
+    }
+    &:active{
+        background-color: #e7eff1;
+    }
+}
+
+@mixin hiringPost {
+    p{
+        color: $p-color;
+        margin-bottom: 40px;
+        white-space: wrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 125px;
+    }
+    h5{
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    padding: 30px;
+    line-height: 2;
+    margin-bottom: 40px;
+}
+
+@mixin preferencesBox {
+    height: 200px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    margin: 10px;
+    svg{
+        font-size: 3em;
+        color: #3db8db;
+        font-weight: 300;
+    }
+    h5{
+        margin-top: 25px;
+        font-weight: 500;
+    }
+    &:hover{
+        box-shadow: 0 10px 50px -5px #dce1e3;
+        cursor: pointer;
+        svg{
+            color: #e9563d;
+        }
+    }
+}
+
+main{
+    padding: $sector-padding;
+    padding-bottom: 30px;
+    h1{
+        color: #10242b;
+        font-weight: 600;
+    }
+    .hiringPos{
+        @include hiringPost;
+        .btnApply{
+        @include applyBTN;
+        }
+        .btnMore{
+        @include moreBTN;
+        }
+    }
+}
+
+.preferences{
+    background-color: $preferences-bg;
+    padding: $sector-padding;
+    h2{
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+    .prefBox{
+        @include preferencesBox;
+    }
+    .fa-heart{
+        color: #f74242;
+    }
+}
+
+.feedback{
+    padding: $sector-padding;
+    h2{
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+    p{
+        color: $p-color;
+        font-size: $p-size;
+        line-height: 2;
+        width: 90%;
+        margin-bottom: 30px;
+        &::before{
+            content: open-quote;
+            position: absolute;
+            left: -30px;
+            top: 30px;
+            font-size: 3em;
+            font-weight: bold;
+            color: black;
+            font-family: serif;
+        }
+        &::after{
+            content: close-quote;
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            font-size: 3em;
+            font-weight: bold;
+            color: black;
+            font-family: serif;
+        }
+        
+    }
+    h6{
+        font-weight: 600;
+        color: #e9563d;
+    }
+    span{
+        color: $p-color;
+        font-weight: 200;
+    }
+}
+
+@media (max-width: 992px){
+    .feedback{
+        .photo{
+            img{
+                margin-bottom: 100px;
+            }
+        }
+    }
+}

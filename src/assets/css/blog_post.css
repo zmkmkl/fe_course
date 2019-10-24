@@ -94,17 +94,17 @@
 	color: #3db8db;
 }
 
-main ul li{
+.liBlock ul li{
 	list-style-type: none;
 	line-height: 3;
 	color: #5D6669;
 }
 
-main ul{
+.liBlock ul{
 	padding: 0;
 }
 
-main ul li i{
+.liBlock ul li i{
 	margin-right: 50px;
 	color: #3db8db;
 }
